@@ -4,7 +4,7 @@ class Contact
     private $name;
     private $number;
     private $address;
-
+//constructor sets the properties
     function __construct($name, $number, $address)
     {
         $this->name = $name;
@@ -12,7 +12,7 @@ class Contact
         $this->address = $address;
     }
 
- //setters for each property
+ //setters for each property (name, number, address)
 
     function setName($new_name)
     {
@@ -29,7 +29,7 @@ class Contact
         $this->address = $new_address;
     }
 
- //getters for each property
+ //getters for each property (name, number, address)
     function getName()
     {
         return $this->name;
@@ -45,7 +45,7 @@ class Contact
         return $this->address;
     }
 
-//methods to save, get all, and delete contact objects
+//methods to save, get all, and delete all contact objects
     function save()
     {
         array_push($_SESSION['list_of_contacts'], $this);
