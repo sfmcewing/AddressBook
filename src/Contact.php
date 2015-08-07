@@ -12,7 +12,7 @@ class Contact
         $this->address = $address;
     }
 
- //setters
+ //setters for each property
 
     function setName($new_name)
     {
@@ -29,7 +29,7 @@ class Contact
         $this-> = $new_address;
     }
 
- //getters
+ //getters for each property
     function getName()
     {
         return $this->name;
@@ -45,19 +45,20 @@ class Contact
         return $this->address;
     }
 
+//methods to save, get all, and delete contact objects
     function save()
     {
-        array_push($_SESSION['contact_list'], $this);
+        array_push($_SESSION['list_of_contacts'], $this);
     }
 
     static function getAll()
     {
-        return $_SESSION['contact_list'];
+        return $_SESSION['list_of_contacts'];
     }
 
     static function deleteAll()
     {
-        $_SESSION['contact_list'] = array();
+        $_SESSION['list_of_contacts'] = array();
     }
 }
 ?>
