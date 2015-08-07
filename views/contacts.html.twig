@@ -7,7 +7,7 @@
         <div class='container'>
             <h1>Your Address Book</h1>
 
-            <p>Enter your contact</p>
+
             {% if contacts is not empty %}
                 <p>Here are of your contacts:</p>
                 <ul>
@@ -19,6 +19,7 @@
                 </ul>
             {% endif %}
 
+<!--form to enter the contact name, number, and address, which takes you to created contact page-->
         <form action='/contacts' method='post'>
             <div class='form-group'>
                 <label for='name'>Enter the name:</label>
@@ -32,10 +33,11 @@
                 <label for='address'>Enter the address:</label>
                 <input id='address' name='address' class='form-control' type='text'>
             </div>
-
+<!--create a contact button here-->
             <button type='submit' class='btn-success'>Create a contact</button>
         </form>
 
+<!--delete your contacts button here which takes you to delete contacts page-->
         <form action='/delete_contacts' method='post'>
             <button type='submit' class='btn-danger'>Delete your contacts</button>
         </form>
