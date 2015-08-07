@@ -6,7 +6,7 @@
 
 ## Description
 
-_This creates an address book where you can store contact information for people you know. The first page displays any existing contacts, and provides the user with form to fill create a new contact. After the form is submitted, the user is taken to a page which tells them they created a contact, and displays the information as well as a link to view all of their saved contacts. The home page also displays a delete button, which deletes all contacts and takes the user to a confirmation page. _
+This creates an address book where you can store contact information for people you know. The first page displays any existing contacts, and provides the user with form to fill create a new contact. After the form is submitted, the user is taken to a page which tells them they created a contact, and displays the information as well as a link to view all of their saved contacts. The home page also displays a delete button, which deletes all contacts and takes the user to a confirmation page.
 
 ## Setup
 
@@ -15,8 +15,8 @@ _This creates an address book where you can store contact information for people
 * _In top level of project folder, install composer.json which will create a vendor folder with all the Silex and Twig files in it_
 * _Create index.php file inside the web folder_
 * _Create app.php file inside app folder_
-*_Create Contact.php file inside src folder_
-*_Add twig templates to views folder_
+* _Create Contact.php file inside src folder_
+* _Add twig templates to views folder_
 * _Start your server inside of web: php -S localhost:8000_
 
 
