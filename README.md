@@ -1,30 +1,32 @@
-# _{Address Book}_
+# _Address Book_
 
-##### _{PHP Object-oriented exercise}, {8/7/2015}_
+##### _PHP Object-oriented exercise, 8/7/2015_
 
-#### By _**{Sarah McEwing}**_
+#### By _**Sarah McEwing**_
 
 ## Description
 
-_{This creates an address book where you can store contact information for people you know. The first page displays any existing contacts, and provides the user with form to fill create a new contact. After the form is submitted, the user is taken to a page which tells them they created a contact, and displays the information as well as a link to view all of their saved contacts. The home page also displays a delete button, which deletes all contacts and takes the user to a confirmation page. }_
+_This creates an address book where you can store contact information for people you know. The first page displays any existing contacts, and provides the user with form to fill create a new contact. After the form is submitted, the user is taken to a page which tells them they created a contact, and displays the information as well as a link to view all of their saved contacts. The home page also displays a delete button, which deletes all contacts and takes the user to a confirmation page. _
 
 ## Setup
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
 
-_{Leave nothing to chance! You want it to be easy for potential employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Are there other applications this app depends on?}_
+* _Create project folder including app, web, src, and views folders_
+* _In top level of project folder, install composer.json which will create a vendor folder with all the Silex and Twig files in it_
+* _Create index.php file inside the web folder_
+* _Create app.php file inside app folder_
+*_Create Contact.php file inside src folder_
+*_Add twig templates to views folder_
+* _Start your server inside of web: php -S localhost:8000_
+
 
 ## Technologies Used
 
-_{PHP, Silex, Twig}_
+_PHP, Silex, Twig_
 
 ### Legal
 
-Copyright (c) 2015 **_{Sarah McEwing}_**
+Copyright (c) 2015 **_Sarah McEwing_**
 
 This software is licensed under the MIT license.
 
