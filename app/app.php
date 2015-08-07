@@ -16,7 +16,7 @@
 
     //this is the home page at contacts.html.twig
     $app->get("/", function() use ($app) {
-        return $app['twig']->render('contacts.html.twig', array, ('contacts' => Contact::getAll()));
+        return $app['twig']->render('contacts.html.twig', array('contacts' => Contact::getAll()));
     });
 
     //this is the page where contacts are created & posted

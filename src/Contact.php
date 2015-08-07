@@ -26,7 +26,7 @@ class Contact
 
     function setAddress($new_address)
     {
-        $this-> = $new_address;
+        $this->address = $new_address;
     }
 
  //getters for each property
