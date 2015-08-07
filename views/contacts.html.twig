@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Address Book</title>
+    </head>
+    <body>
+        <h1>Your List of Contacts</h1>
+
+        {% if contacts is not empty %}
+            <p>Here are of your contacts:</p>
+            <ul>
+                {% for contact in contacts %}
+                    <li>{{ contact.getName }}</li>
+                    <li>{{ contact.getNumber }}</li>
+                    <li>{{ contact.getAddress }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <form action='/contacts' method='post'>
+            <div class='form-group'>
+                <label for='name'>Enter the name:</label>
+                <input id='name' name='name' class='form-control' type='text'>
+            </div>
+            <div class='form-group'>
+                <label for='number'>Enter the phone number:</label>
+                <input id='number' name='number' class='form-control' type='number'>
+            </div>
+            <div class='form-group'>
+                <label for='address'>Enter the address:</label>
+                <input id='address' name='address' class='form-control' type='text'>
+            </div>
+
+            <button type='submit' class='btn-success'>Create a contact</button>
+        </form>
+
+        <form action='/delete_contacts' method='post'>
+            <button type='submit'>Delete your contacts</button>
+        </form>
+    </body>
+</html>
